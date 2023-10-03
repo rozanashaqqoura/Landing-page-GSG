@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap');
+:root{
+    --gradient: linear-gradient(to top right , #edd3c5 ,#efcdc4 , #f7babf,#fdb4a3);
+    --color:#fdb4a3;
+    --co-g :#dddd;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background-color:var(-gradient);
+    /* min-width: 100%; */
+}
+/* start header */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar nav{
+    display: flex;
+    padding-right: 100px;
+}
+#Pages{
+    outline: none;
+    border: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#navbar ul {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#navbar nav i {
+    padding: 15px 20px;
+    cursor: pointer;
+    
+}
+#navbar ul:hover{
+    color:#fdb4a3;
+}
+
+#navbar select:hover{
+    color:#fdb4a3;
+}
+.active{
+    color: #f6a795 !important;
+}
+
+#navbar nav .drop-menu{
+    width: 13px;
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    margin: 35px !important;
+}
+.togel-munu{
+    display: none;
+}
+
+
+/* Responsive Design */
+@media(max-width:992px){
+    #navbar nav {
+        display: none;
+    }
+    .togel-munu{
+        display: block;
+    }
+    .imag img{
+        display: none;
+    }
+    .col-2{
+        width:min-content;
+
+    }
+
+}
+@media(max-width:767px){
+    .imag img{
+        display: none;
+    }
+    .hero .info h3 {
+        font-size: 30px;
+        
+    }
+    .all-imag img{
+
+        width: 200px;
+        height: 200px;
+    }
+    .our-services .info {
+        margin-left: 35px;
+    }
+    .col-2{
+        width:min-content;
+
+    }
+}
+
+
+
+
+
+/* nav ul li a {
+    position: relative;
+    color: white;
+
+
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition:.5s linear ;
+    
+}
+nav ul li a:hover::before{
+    transform: scaleX(10);
+    transform-origin: left;
+
+} */
+
+
+.w-imag{
+    width: 15rem;
+    padding-left: 100px;
+    
+}
+.imag img {
+    width:19rem;
+    height:20rem;
+    border-radius:50%;
+    margin-right: 10rem;
+    
+
+}
+.hero{
+height: 80vh;
+border-top:1px solid #dddd ;
+
+}
+
+
+.hero .container{
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    height: 80%;
+    /* background-color: var(--gradient); */
+    background: linear-gradient(45deg ,#f4dadd , #edd3c5 , #f6a795,#f4dadd,#fac7cd)  ;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-size:600%;
+    animation:dg-animation 5s infinite alternate ;
+   
+    
+}
+@keyframes dg-animation{
+    0%{
+        background-position:right;
+    }
+    100%{
+        background-position:left;
+    }
+}
+.down{
+    position: absolute;
+    top: 73%;
+    left: 5%;
+    /* bottom:-30px; */
+    /* padding: 10px; */
+
+    color: black;
+}
+.down span{
+    margin: 5px;
+    font-size: 16ox;
+}
+
+.hero .info{
+    margin-left: 10rem;
+    font-size: 30px;
+    
+}
+.our-services .info {
+    margin-left: 10rem;
+    width: 30%;
+
+}
+.service{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.service div{
+    flex-basis: 50%;
+}
+.service .text{
+    position: relative;
+    margin-top: 20px;
+    transition: all .5s;
+}
+.service .text:hover{
+
+color: #fdb4a3;
+}
+.service .text::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f111';
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    font-size: 10px;
+    
+}
+.our-services .info h3{
+    font-size: 30px;
+    color:black;
+    font-weight: 100;
+    letter-spacing: 5px;
+    width: 30%;
+    margin-left: 10rem;
+
+}
+.our-services .info button{
+    background-color:white;
+    color:black;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    transition: all .4s;
+    border-radius: 5px;
+}
+.our-services .info button:hover{
+    font-size: 16px;
+    font-weight: bold;
+}
+.all-services{
+    width: 50px;
+}
+
+/* End header */
+
+/* statrt ourserviec */
+.font-gre{
+    color: var(--co-g);
+    font-size: 15px;
+}
+.our-services{
+    display: flex;
+}
+.our-services .info h1{
+    font-size: 35px;
+    font-weight: 100;
+
+} 
+
+
+
+.pink{
+    color: #fdb4a3;
+}
+.icon i {
+    font-size: 7px;
+} 
+
+ /* End Ourservices  */
+
+
+/* start ourExpert  */
+.ourexpert{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.center{
+    text-align: center;
+}
+
+.center p {
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+
+}
+.all-imag{
+    padding:10px;
+    margin: 10px;
+}
+.all-imag img{
+    margin-top:50px;
+    width:100%;
+    transition:.5s; 
+    box-shadow: 0 0 10px #ccc; 
+    border-radius: 10px;
+    filter: grayscale(100%)
+}
+.all-imag:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    
+    
+}
+button{
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6a795;
+    transition: all .5s;
+    margin-top: 5px;
+
+}
+button:hover{
+    transform: scale(45deg);
+    background-color: #ddd;
+}
+
+.imag-1 {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.imag-1 p {
+    font-size: 20px;
+    color: black;
+    margin-top:20px;
+    
+
+
+
+}
+.imag-1 span{
+    font-size: 10px;
+    color:#727171dd;
+    margin-bottom: 10px;
+
+} 
+
+
+/* End ourExpert */
+
+
+/* start The Awards  */
+
+.endpart{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.endpart  .container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    margin-left: 10%;
+    
+}
+.endpart .container .col-11{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.col-1 {
+    padding: 10px 30px;
+    display: flex;
+
+    border-bottom: 1px solid #ddd;
+}
+.page{
+    color: #585555dd;
+    font-size: 15px;
+}
+.col-p {
+    margin: 30px;
+}
+.center-1{
+    
+    font-size: 30px;
+    margin-left:10% ;
+}
+.titl{
+margin: 18px;
+} 
+
+
+
+
+
+
+.col-2 img{
+    width:70%;
+    height: 100%;
+    /* margin-left: 25%; */
+} 
+
+
+/* End The Awards  */
+
+
+
+/* start FOoter */
+ #footer {
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+}
+.foot p {
+    font-size:15px;
+    font-weight: 100; 
+} 
+
+@media only screen and (max-width: 767px) {
+    .col-2 img {
+      width: 96%;
+      height: 100%;
+    }
+    
+    .col-2 {
+      width: min-content;
+    }
+    
+    .our-services {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .service {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto; /* Move this line inside the .service selector */
+    }
+    
+    .service div {
+      margin-top: 20px;
+    }
+  }
+  
+
+/* end footer */
+
+
+
